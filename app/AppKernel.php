@@ -35,6 +35,8 @@ class AppKernel extends Kernel
             new Sonata\AdminBundle\SonataAdminBundle(),
             new Sonata\DoctrineORMAdminBundle\SonataDoctrineORMAdminBundle(),
             new Sonata\jQueryBundle\SonatajQueryBundle(),
+            new Sonata\UserBundle\SonataUserBundle('FOSUserBundle'),
+            new Sonata\EasyExtendsBundle\SonataEasyExtendsBundle(),
 
             new Vich\UploaderBundle\VichUploaderBundle(),
 
@@ -42,7 +44,8 @@ class AppKernel extends Kernel
             new Stfalcon\Bundle\PortfolioBundle\StfalconPortfolioBundle(),
 
             new Application\Bundle\DefaultBundle\ApplicationDefaultBundle(),
-            new Application\Bundle\UserBundle\ApplicationUserBundle(),
+            new Application\Sonata\UserBundle\ApplicationSonataUserBundle(),
+//            new Application\Bundle\UserBundle\ApplicationUserBundle(),
             new Sonata\CoreBundle\SonataCoreBundle(),
             new FOS\UserBundle\FOSUserBundle(),
         );
